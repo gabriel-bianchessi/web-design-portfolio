@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpeg" href="assets/icon_ledzeppelin.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Portfólio Led Zeppelin</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <img src="assets/logo_ledzeppelin.png" alt="Led Zeppelin Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="#bio">Biografia</a></li>
+          <li><a href="#discos">Discografia</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <img src="assets/logo_ledzeppelin.png" alt="Led Zeppelin Logo">
+      <p>Uma viagem pelo legado de uma das maiores bandas de rock de todos os tempos.</p>
+      <button>Descubra mais</button>
+    </section>
+
+    <!-- Biografia Led Zeppelin -->
+    <section id="bio" class="section-card">
+      <h2>Biografia</h2>
+      <p>O Led Zeppelin foi uma das bandas mais influentes e inovadoras da história do rock, formada em 1968 em Londres por Robert Plant (vocal), Jimmy Page (guitarra), John Paul Jones (baixo e teclados) e John Bonham (bateria). Juntos, eles criaram um som único que misturava blues, rock, folk e influências de diversas culturas, revolucionando o cenário musical e estabelecendo as bases do hard rock e do heavy metal.</p>
+      <p>Seu álbum de estreia, lançado em 1969, foi um marco, mas foi com obras como Led Zeppelin II e Led Zeppelin IV que solidificaram seu legado. Entre seus maiores sucessos estão "Stairway to Heaven", "Whole Lotta Love", "Kashmir" e "Immigrant Song", esta última destacando o poderoso vocal de Plant e as referências mitológicas que enriqueceram suas composições.</p>
+      <p>Além dos álbuns de estúdio, os shows ao vivo do Led Zeppelin eram lendários, marcados por performances intensas e improvisações que mostravam a química e a habilidade técnica de cada integrante. Jimmy Page se destacou como um dos guitarristas mais influentes de todos os tempos, enquanto a base rítmica impecável de John Paul Jones e John Bonham deu vida a canções de complexidade única. Robert Plant, por sua vez, trouxe uma presença vocal marcante e letras que variavam de histórias místicas a reflexões emocionais.</p>
+      <p>Em 1980, a trágica morte de John Bonham marcou o fim da banda. Mais do que colegas, os membros eram amigos que compartilhavam uma profunda conexão musical e pessoal. Sem Bonham, eles decidiram que continuar não faria sentido, encerrando a trajetória do Led Zeppelin como um tributo à amizade e à paixão que os uniu. Ainda assim, o legado da banda permanece imortal, com sua música continuando a inspirar gerações e reafirmando sua posição como uma das maiores de todos os tempos.</p>
+    </section>
+
+    <!-- Discografia Led Zeppelin -->
+    <section id="discos" class="section-card">
+      <h2>Discografia</h2>
+      <ul>
+        <li>Led Zeppelin - (1969)</li>
+        <li>Led Zeppelin II - (1969)</li>
+        <li>Led Zeppelin III - (1970)</li>
+        <li>Led Zeppelin IV (Untitled) - (1971)</li>
+        <li>Houses of the Holy - (1973)</li>
+        <li>Physical Graffiti - (1975)</li>
+        <li>Presence - (1976)</li>
+        <li>The Song Remains the Same (Live) - (1976)</li>
+        <li>In Through the Out Door - (1979)</li>
+      </ul>
+    </section>
+
+    <!-- Galeria em carrossel Led Zeppelin (arrumar rolagem excessiva) -->
+    <section id="galeria" class="section-card">
+      <h2>Galeria</h2>
+
+      <div class="carousel">
+        <!-- Controles (radios) -->
+        <input type="radio" name="carousel" id="slide1" checked>
+        <input type="radio" name="carousel" id="slide2">
+        <input type="radio" name="carousel" id="slide3">
+
+        <!-- Slides (3 imagens por cada) -->
+        <div class="slides">
+          <div class="slide">
+            <img src="assets/galeria/imgzeppelin.jpg" alt="Show Led Zeppelin 1">
+            <img src="assets/galeria/imgzeppelin2.jpg" alt="Show Led Zeppelin 2">
+            <img src="assets/galeria/imgzeppelin3.jpg" alt="Show Led Zeppelin 3">
+          </div>
+          <div class="slide">
+            <img src="assets/galeria/imgzeppelin4.jpg" alt="Show Led Zeppelin 4">
+            <img src="assets/galeria/imgzeppelin5.jpg" alt="Show Led Zeppelin 5">
+            <img src="assets/galeria/imgzeppelin6.jpg" alt="Show Led Zeppelin 6">
+          </div>
+          <div class="slide">
+            <img src="assets/galeria/imgzeppelin7.jpg" alt="Show Led Zeppelin 7">
+            <img src="assets/galeria/imgzeppelin8.jpg" alt="Show Led Zeppelin 8">
+            <img src="assets/galeria/imgzeppelin9.jpg" alt="Show Led Zeppelin 9">
+          </div>
+        </div>
+
+        <!-- Setas -->
+        <div class="arrows">
+          <!-- Slide 1 -->
+          <label for="slide3" class="arrow prev slide1"></label>
+          <label for="slide2" class="arrow next slide1"></label>
+          <!-- Slide 2 -->
+          <label for="slide1" class="arrow prev slide2"></label>
+          <label for="slide3" class="arrow next slide2"></label>
+          <!-- Slide 3 -->
+          <label for="slide2" class="arrow prev slide3"></label>
+          <label for="slide1" class="arrow next slide3"></label>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Portfólio Tributo Led Zeppelin</p>
+  </footer>
+</body>
+</html>

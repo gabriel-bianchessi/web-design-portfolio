@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'SuperBrigade';
+  src: url('/assets/fonts/super-brigade-font/SuperBrigade-xRoW0.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SuperBrigade3D';
+  src: url('/assets/fonts/super-brigade-font/SuperBrigade3D-pg3Pa.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SuperBrigadeChrome';
+  src: url('/assets/fonts/super-brigade-font/SuperBrigadeChrome-DY0xm.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SuperBrigadeCondensed';
+  src: url('/assets/fonts/super-brigade-font/SuperBrigadeCondensed-ARwy2.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SuperBrigadeExpanded';
+  src: url('/assets/fonts/super-brigade-font/SuperBrigadeExpanded-q23Ll.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SuperBrigadeGradient';
+  src: url('/assets/fonts/super-brigade-font/SuperBrigadeGradient-V4qA6.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SuperBrigadeHalftone';
+  src: url('/assets/fonts/super-brigade-font/SuperBrigadeHalftone-Jpax7.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SuperBrigadeItalic';
+  src: url('/assets/fonts/super-brigade-font/SuperBrigadeItalic-G3Kxm.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SuperBrigadeLaser';
+  src: url('/assets/fonts/super-brigade-font/SuperBrigadeLaser-j9V2l.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SuperBrigadeLeftalic';
+  src: url('/assets/fonts/super-brigade-font/SuperBrigadeLeftalic-zr9Ea.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SuperBrigadeRotalic';
+  src: url('/assets/fonts/super-brigade-font/SuperBrigadeRotalic-5yaVL.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SuperBrigadeSemiCondensed';
+  src: url('/assets/fonts/super-brigade-font/SuperBrigadeSemiCondensed-6Razo.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SuperBrigadeSemiExpanded';
+  src: url('/assets/fonts/super-brigade-font/SuperBrigadeSemiExpanded-yYja2.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SuperBrigadeSpaced';
+  src: url('/assets/fonts/super-brigade-font/SuperBrigadeSpaced-9MoVZ.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SuperBrigadeSpacedLeftalic';
+  src: url('/assets/fonts/super-brigade-font/SuperBrigadeSpacedLeftalic-lxdaZ.otf') format('opentype');
+}
+@font-face {
+  font-family: 'SuperBrigadeTitle';
+  src: url('/assets/fonts/super-brigade-font/SuperBrigadeTitle-nALOR.otf') format('opentype');
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  position: relative;
+  background-color: blue;
+  height: 100svh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+  .hero-text {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+
+    h1 {
+      color: white;
+      font-family: SuperBrigade;
+      text-transform: uppercase;
+
+      
+      &.first-name {
+        font-size: 64px;
+        color: yellow;
+      }
+      
+      &.last-name {
+        color: red;
+        filter: drop-shadow(-1px 1px 1px white);
+        line-height: 32px;
+        font-size: 84px;
+      }
+
+      &.race-number {
+        font-family: SuperBrigade3D;
+        font-size: 180px;
+        line-height: 8px;
+      }
+    }
+  }
+
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url('/assets/hero-image.jpg');
+  background-position: center;
+  background-size: cover;
+  filter: brightness(0.5); 
+}
+
+.hero > * {
+  position: relative;
+  z-index: 1;
+}
+
+.about {
+  background-color: red;
+  height: 100svh;
+  width: 100%;
+}
