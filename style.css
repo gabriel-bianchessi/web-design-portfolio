@@ -64,6 +64,7 @@ nav a:hover {
 .hero a {
   padding: 10px 20px;
   background-color: #ffd700;
+  text-decoration: none;
   color: #000;
   border: none;
   border-radius: 25px;
