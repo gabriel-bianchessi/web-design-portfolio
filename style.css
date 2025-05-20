@@ -61,7 +61,7 @@ nav a:hover {
   margin-bottom: 30px;
 }
 
-.hero button {
+.hero a {
   padding: 10px 20px;
   background-color: #ffd700;
   color: #000;
